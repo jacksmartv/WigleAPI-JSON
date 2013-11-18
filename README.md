@@ -14,37 +14,57 @@ Use
 
 	The wigleAPI.php is the Core class API.
 	you can request this API directly by POST or GET
-	and get the response in JSON or ARRAY
+	with AJAX or CURL and get the response in 
+	JSON or ARRAY format
 
-	**wigleAPI.php entry point of API**
-	**Login**
-		
-		*  login = login
-		*  user = your_user_name_wigle
-		*  pass = your_pass_wigle
-	
-	**Logout **
+**wigleAPI.php entry point of API**
 
-		*  login = logout
-	
-	** Search by Range  **
-		
-		*  longrange1 
-		*  latrange1
-		*  longrange2
-		*  latrange2
-	
-	**Search by MAC Address**
-		
-		-  netid = MAC Address		
-	
-	**Display Results**
+Methods
+-------
+**Login**
 
-	-  JSON RESULT PAGE
-	- [ jackpelorus.com.ar ] (http://jackpelorus.com.ar)
+- login (string) = login
+- user (string) = your_user_name_wigle
+- pass (string) = your_pass_wigle
+
+**Example login by GET Request**(unsecure but available)
+
+	http://your_domain/wigleAPI.php?login=login&user=your_user&pass=your_pass
+	
+**Logout**
+
+- login (string) = logout
+
+**Example logout by GET Request**(unsecure but available)
+
+	http://your_domain/wigleAPI.php?login=logout
+
+**Search by Range**
+		
+- longrange1   (string)  = Minimum longitude for square of area being queried.	-89.54321
+- latrange1    (string)  = Minimum latitude for square of area being queried.	41.12345
+- longrange2   (string)  = Maximum longitude for square of area being queried.	-89.12345
+- latrange2    (string)  = Maximum latitude for square of area being queried.	41.54321
+- typeSearch   (string)  = { mac or range }
+- responseType (string)  = { json or array }
+
+**Search by MAC Address**
+		
+-  netid (string) = MAC Address		
+- typeSearch   (string)  = { mac or range }
+- responseType (string)  = { json or array }
+
+**Example Search by MAC Address by GET Request**(unsecure but available)
+
+	http://your_domain/wigleAPI.php?netid=0A:2C:EF:3D:25:1B&typeSearch=mac&responseType=json
+
+
+**Display Results**
+
+- [ jackpelorus.com.ar See in Action !!! ] (http://jackpelorus.com.ar/wigleAPI)
 	
 	
 Test GUI integrated
 -------------------
 
-	** http://your_domain/wigleAPI **
+**http://your_domain/wigleAPI**
