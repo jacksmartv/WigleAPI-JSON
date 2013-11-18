@@ -42,7 +42,8 @@ Use
 	###  Display Results  ###
 
 	*  JSON RESULT PAGE
-	*[jackpelorus.com.ar] jackpelorus.com.ar
+	*[ jackpelorus.com.ar ] (http://jackpelorus.com.ar)
+	
 	
 Test GUI integrated
 -------------------
