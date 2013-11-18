@@ -17,35 +17,35 @@ Use
 	you can request this API directly by POST or GET
 	and get the response in JSON or ARRAY
 
-	###  wigleAPI.php entry point of API  ###
-	###  Login  ###
+	** wigleAPI.php entry point of API  **
+	**  Login  **
 		
-		*  login = login
-		*  user = your_user_name_wigle
-		*  pass = your_pass_wigle
+		-  login = login
+		-  user = your_user_name_wigle
+		-  pass = your_pass_wigle
 	
-	### Logout ###
+	** Logout **
 
-		*  login = logout
+		-  login = logout
 	
-	### Search by Range  ###
+	** Search by Range  **
 		
-		*  longrange1 
-		*  latrange1
-		*  longrange2
-		*  latrange2
+		-  longrange1 
+		-  latrange1
+		-  longrange2
+		-  latrange2
 	
-	###  Search by MAC Address  ###
+	**  Search by MAC Address  **
 		
-		*  netid = MAC Address		
+		-  netid = MAC Address		
 	
-	###  Display Results  ###
+	**  Display Results  **
 
-	*  JSON RESULT PAGE
-	*[ jackpelorus.com.ar ] (http://jackpelorus.com.ar)
+	-  JSON RESULT PAGE
+	- [ jackpelorus.com.ar ] (http://jackpelorus.com.ar)
 	
 	
 Test GUI integrated
 -------------------
-	
-	http://your_domain/wigleAPI
+
+	** http://your_domain/wigleAPI **
